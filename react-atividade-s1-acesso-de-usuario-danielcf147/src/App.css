@@ -1,3 +1,18 @@
+.div-User{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  font-size: 40px;
+  width: 1400px;
+  height: 650px;
+}
+.btnUser{
+  width: 80px;
+  height: 20px;
+}
 .App {
   text-align: center;
 }

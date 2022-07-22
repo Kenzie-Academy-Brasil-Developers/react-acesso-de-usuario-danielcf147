@@ -1,15 +1,15 @@
 const RestrictedPage = ({isLoggedIn, user, Login, Logout}) => {
     return <div>
                 {isLoggedIn?
-                <>
-                <p>Bem-vindo {user}</p>
-                <button onClick={(Logout)}>Logout</button>
-                </>
+                <div className="div-User">
+                <p>Bem-vindo {user} (づ｡◕‿‿◕｡)づ</p>
+                <button className="btnUser" onClick={(Logout)}>Logout</button>
+                </div>
                 :
-                <>
-                <p>Você não pode acessar essa página</p>
-                <button onClick={Login}>Login</button>
-                </>
+                <div className="div-User">
+                <p>Você não pode acessar essa página ¯\_(ツ)_/¯</p>
+                <button className="btnUser" onClick={Login}>Login</button>
+                </div>
                 }
             </div>
 }
